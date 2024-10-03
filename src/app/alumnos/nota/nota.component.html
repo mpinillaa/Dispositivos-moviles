@@ -1,0 +1,10 @@
+
+
+<ul class="list-group"*ngFor="let p of lista">
+  <li class="list-group-item active"> Nombre:{{p.nombre}}</li>
+    <li class="list-group-item"> Asignatura:{{p.asignatura}}</li>
+    <li class="list-group-item"> Notas:{{p.nota}}</li>
+    <li *ngIf="p.nota>=5">Aprobado</li>
+    <li *ngIf="p.nota<=5">Suspenso</li>
+  </ul>
+
