@@ -2,38 +2,26 @@
 
     <table class="table">
         <thead>
+
           <tr>
-            <th scope="col">#</th>
-            <th scope="col">Pelicula  </th>
-            <th scope="col">Director  </th>
-            <th scope="col">anyoEstreno   </th>
+            <th scope="col">Pelicula</th>
+            <th scope="col">Director</th>
+            <th scope="col">anyoEstreno</th>
+            <th scope="col">Imagen</th>
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <th scope="row">1</th>
-            <td>Transformers  </td>
-            <td>Carlos</td>
-            <td>2005</td>
+
+          <tr class="pelis" *ngFor="let p of lista">
+            <td> {{p.titulo}} </td>
+            <td> {{p.director}} </td>
+            <td> {{p.anyoEstreno}}</td>
+            <td><img src="{{p.imagen}}"></td> 
           </tr>
-          <tr>
-            <th scope="row">2</th>
-            <td>Cars</td>
-            <td>Eva</td>
-            <td>2008</td>
-          </tr>
-          <tr>
-            <th scope="row">3</th>
-            <td></td>
-            <td>Eva</td>
-            <td>2008</td>
-          </tr>
+
         </tbody>
       </table>
 
     
-    <div class="pelis" *ngFor="let p of lista">
-        <h1> {{p.titulo}} </h1>
-        <h2> {{p.director}} {{p.anyoEstreno}}</h2>
-    </div>
+   
 </div>
