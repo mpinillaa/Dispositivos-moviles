@@ -15,6 +15,10 @@ lista:Icine[]=[];
 
 
 constructor(private data:ContenidoService){
-this.lista=this.data.getPeliculas()
+  this.data.getPeliculas().subscribe((listaPelicula) => {
+    listaPelicula.forEach((s) => {
+      this.lista.push(s);
+    });
+});
 }
 }

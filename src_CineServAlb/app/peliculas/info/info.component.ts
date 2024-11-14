@@ -16,7 +16,13 @@ export class InfoComponent implements OnInit {
 
   constructor(private router: ActivatedRoute, private data: ContenidoService) {   // Un solo constructor que recibe 'ActivatedRoute'
 
-    this.cine=this.data.getPeliculas()
+   
+      this.data.getPeliculas().subscribe((listaPelicula) => {
+        listaPelicula.forEach((s) => {
+          this.cine.push(s);
+        });
+    });
+  
     this.serie=this.data.getSeries()
     
   }
