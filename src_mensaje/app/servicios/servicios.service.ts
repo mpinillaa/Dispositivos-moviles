@@ -11,6 +11,6 @@ export class ServiciosService {
   constructor(private http: HttpClient) {}
 
   public getmensajes(): Observable<IMensaje[]>{
-    return this.http.get<IMensaje[]>('/data/Peliculas.json');
+    return this.http.get<IMensaje[]>('/data/mensaje.json');
   }
 }

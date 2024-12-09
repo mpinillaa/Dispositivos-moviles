@@ -1,0 +1,60 @@
+body {
+    background-color: #f4f4f9; /* Fondo gris claro para toda la página */
+    font-family: 'Arial', sans-serif; /* Fuente limpia y moderna */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Centrado horizontal */
+    align-items: center; /* Centrado vertical */
+    height: 100vh; /* Altura completa de la ventana */
+}
+
+/* Estilos para el contenedor principal de los mensajes */
+.contendor {
+    width: 100%;
+    max-width: 900px; /* Limita el tamaño máximo del contenedor */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Espacio entre los mensajes */
+}
+
+/* Estilos para cada contenedor de mensaje */
+.cont {
+    background-color: #fff; /* Fondo blanco para el mensaje */
+    padding: 20px; /* Espaciado interior */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    transition: all 0.3s ease; /* Transición suave para efectos */
+}
+
+/* Efecto hover sobre el contenedor del mensaje */
+.cont:hover {
+    transform: scale(1.03); /* Ligera ampliación al pasar el ratón */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Sombra más intensa al hacer hover */
+}
+
+/* Estilo para el título del mensaje (h1) */
+.texto h1 {
+    font-size: 1.8rem; /* Título de tamaño grande */
+    color: #333; /* Color oscuro para el título */
+    text-align: center; /* Centrado del título */
+    margin: 0; /* Eliminar márgenes */
+    font-weight: bold; /* Hacer el título más fuerte */
+    line-height: 1.4; /* Espaciado entre líneas para mejor legibilidad */
+}
+
+/* Estilos responsivos para pantallas pequeñas */
+@media (max-width: 768px) {
+    .contendor {
+        padding: 10px;
+    }
+
+    .cont {
+        padding: 15px;
+    }
+
+    .texto h1 {
+        font-size: 1.5rem; /* Reducir el tamaño del título en pantallas pequeñas */
+    }
+}

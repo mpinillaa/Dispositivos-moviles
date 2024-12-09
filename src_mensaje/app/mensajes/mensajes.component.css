@@ -1,0 +1,51 @@
+/* Estilos generales para la sección de mensajes */
+div {
+    background-color: #f9f9f9; /* Fondo claro para el contenedor */
+    padding: 20px; /* Espaciado interior */
+    margin-bottom: 20px; /* Separación entre mensajes */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    font-family: 'Arial', sans-serif; /* Fuente limpia y legible */
+    transition: all 0.3s ease; /* Transición suave al hacer hover */
+}
+
+/* Estilo para el título */
+h1 {
+    font-size: 1.6rem; /* Tamaño grande para el título */
+    color: #333; /* Color oscuro para el texto */
+    margin-bottom: 10px; /* Separación con el resto del contenido */
+    font-weight: bold; /* Hacer el texto más fuerte */
+    text-transform: capitalize; /* Capitalizar la primera letra */
+}
+
+/* Estilo para los párrafos */
+p {
+    font-size: 1rem; /* Tamaño de fuente estándar */
+    color: #555; /* Color gris oscuro */
+    margin-bottom: 8px; /* Espacio entre los párrafos */
+    line-height: 1.5; /* Espaciado entre líneas para mejor legibilidad */
+}
+
+/* Estilo para el ID */
+#texto {
+    font-style: italic; /* Poner el ID en cursiva */
+    color: #777; /* Gris más claro para diferenciarlo */
+}
+
+/* Estilo para el enlace */
+a {
+    text-decoration: none; /* Eliminar subrayado por defecto */
+    color: #007BFF; /* Color azul para el enlace */
+    font-weight: bold; /* Resaltar el enlace */
+    transition: color 0.3s ease; /* Transición suave de color */
+}
+
+a:hover {
+    color: #0056b3; /* Cambiar a un azul más oscuro cuando se pasa el ratón */
+}
+
+/* Efecto al pasar el ratón sobre el contenedor del mensaje */
+div:hover {
+    transform: scale(1.03); /* Agrandar ligeramente el contenedor */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15); /* Aumentar la sombra */
+}
