@@ -1,0 +1,27 @@
+<div>
+
+    <table class="table">
+        <thead>
+
+          <tr>
+            <th scope="col">Pelicula</th>
+            <th scope="col">Director</th>
+            <th scope="col">anyoEstreno</th>
+            <th scope="col">Imagen</th>
+          </tr>
+        </thead>
+        <tbody>
+
+          <tr class="pelis" *ngFor="let p of lista">
+            <td> {{p.titulo}} </td>
+            <td> {{p.director}} </td>
+            <td> {{p.anyoEstreno}}</td>
+            <td><img src="{{p.imagen}}"></td> 
+          </tr>
+
+        </tbody>
+      </table>
+
+    
+   
+</div>
